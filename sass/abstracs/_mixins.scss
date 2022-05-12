@@ -1,0 +1,38 @@
+/* Le mixin va nous servir à stocker des blocs entiers de code,
+par exemple une variable + sa valeur
+@mixin mixin-namme {
+    css-property: value;
+}
+Pour le mixin-name, c'est préférable de l'intituler par son rôle 
+Un exemple plus concret en-dessous
+
+@mixin row-flex($wrap : wrap,$direction : row) {
+    display: flex;
+    flex-wrap: $wrap;
+    flex-direction : $direction;
+}
+
+ Une fois le mixin déclaré, il peut être appelé partout avec la syntaxe suivante :
+
+@include row-flex(); 
+donnera en css:
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction : row;
+
+
+@include row-flex(nowrap);
+donnera en css:
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction : row;
+
+@include row-flex(wrap,column);
+donnera en css:
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction : column;
+
+Les paramètres wrap et column sont optionnelles car on a défini une valeur par défaut dans le mixin
+$wrap : wrap et $direction : row
+*/

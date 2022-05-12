@@ -1,0 +1,245 @@
+cadre :
+height: 4174px;
+width: 1440px;
+left: 2837px;
+top: -1434px;
+border-radius: 0px;
+
+boutton contact :
+height: 56px;
+width: 140px;
+left: 0px;
+top: 0px;
+border-radius: 28px;
+
+about-service-project:
+properties:
+height: 25px;
+width: 48px;
+left: 885px;
+top: 16px;
+border-radius: nullpx;
+typo:
+font-family: Barlow;
+font-size: 18px;
+font-weight: 600;
+line-height: 25px;
+letter-spacing: -0.12857143580913544px;
+text-align: left;
+
+
+logo sunnyside:
+height: 33px;
+width: 170px;
+left: 0px;
+top: 12px;
+border-radius: 0px;
+
+we are creative:
+height: 69px;
+width: 750px;
+left: 344.5px;
+top: 195px;
+border-radius: nullpx;
+typo:
+font-family: Fraunces 9pt Soft;
+font-size: 56px;
+font-weight: 900;
+line-height: 69px;
+letter-spacing: 8.75px;
+text-align: center;
+
+
+transform your brand:
+properties:
+height: 98px;
+width: 445px;
+left: 165px;
+top: 958px;
+border-radius: nullpx;
+typo:
+font-family: Fraunces 9pt Soft;
+font-size: 40px;
+font-weight: 900;
+line-height: 49px;
+letter-spacing: -0.2857142984867096px;
+text-align: left;
+
+we are a fully:
+height: 90px;
+width: 445px;
+left: 165px;
+top: 1088px;
+border-radius: nullpx;
+typo:
+font-family: Barlow;
+font-size: 18px;
+font-weight: 600;
+line-height: 30px;
+letter-spacing: -0.12857143580913544px;
+text-align: left;
+color:
+background: #808397;
+
+
+learn more:
+height: 25px;
+width: 120px;
+left: 8px;
+top: 0px;
+border-radius: nullpx;
+typo:
+font-family: Fraunces 9pt Soft;
+font-size: 15px;
+font-weight: 900;
+line-height: 25px;
+letter-spacing: 1px;
+text-align: left;
+typo:
+font-family: Fraunces 9pt Soft;
+font-size: 15px;
+font-weight: 900;
+line-height: 25px;
+letter-spacing: 1px;
+text-align: left;
+color:
+background: #24303E;
+
+rectangle sous learnmore:
+height: 10px;
+width: 137px;
+left: 0px;
+top: 15px;
+border-radius: 28px;
+color:
+background: #FAD400;
+
+rectangle sous 2e learnmore:
+color:
+background: #FE7766;
+
+
+graphic design:
+height: 35px;
+width: 221px;
+left: 59px;
+top: 0px;
+border-radius: nullpx;
+typo:
+font-family: Fraunces 9pt Soft;
+font-size: 28px;
+font-weight: 900;
+line-height: 35px;
+letter-spacing: -0.20000000298023224px;
+text-align: center;
+color:
+background: #24554A;
+
+great design:
+height: 81px;
+width: 339px;
+left: 0px;
+top: 62px;
+border-radius: nullpx;
+typo:
+font-family: Barlow;
+font-size: 16px;
+font-weight: 600;
+line-height: 27px;
+letter-spacing: -0.11428571492433548px;
+text-align: center;
+color:
+background: #3E7467;
+
+
+clients testamonial:
+height: 25px;
+width: 348px;
+left: 380px;
+top: 0px;
+border-radius: nullpx;
+typo:
+font-family: Fraunces 9pt Soft;
+font-size: 20px;
+font-weight: 900;
+line-height: 25px;
+letter-spacing: 5px;
+text-align: center;
+color:
+background: #A7AAAD;
+
+oval:
+height: 72px;
+width: 72px;
+left: 139px;
+top: 106px;
+border-radius: 0px;
+
+we put our trust:
+height: 96px;
+width: 350px;
+left: 0px;
+top: 236px;
+border-radius: nullpx;
+typo:
+font-family: Barlow;
+font-size: 18px;
+font-weight: 600;
+line-height: 32px;
+letter-spacing: -0.12857143580913544px;
+text-align: center;
+color:
+background: #5B636D;
+
+
+emily r:
+height: 22px;
+width: 79px;
+left: 63px;
+top: 0px;
+border-radius: nullpx;
+typo:
+font-family: Fraunces 9pt Soft;
+font-size: 18px;
+font-weight: 900;
+line-height: 22px;
+letter-spacing: -0.12857143580913544px;
+text-align: center;
+color:
+background: #24303E;
+
+marketing director:
+height: 25px;
+width: 203px;
+left: 0px;
+top: 31px;
+border-radius: nullpx;
+typo:
+font-family: Barlow;
+font-size: 14px;
+font-weight: 600;
+line-height: 25px;
+letter-spacing: -0.10000000149011612px;
+text-align: center;
+color:
+background: #A7AAAD;
+
+
+footer :
+height: 350px;
+width: 1440px;
+left: 0px;
+top: 3824px;
+border-radius: 0px;
+color:
+background: #90D4C6;
+
+social icons:
+height: 20px;
+width: 20px;
+left: 637px;
+top: 4082px;
+border-radius: 0px;
+color:
+background: #2C7566;
+

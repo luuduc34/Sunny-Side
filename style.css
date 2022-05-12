@@ -1,0 +1,71 @@
+html,
+body,
+div,
+ul,
+head,
+main,
+article,
+footer,
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Fraunces', serif;
+}
+
+.image-container {
+    position: relative;
+}
+
+.container-header {
+    position: absolute;
+    left: 40px;
+    top: 34px;
+    text-align: center;
+    width: 100%;   
+
+}
+
+/* header {
+    background-image: url(./sass/img/orange.png);
+    height: 800px;
+    width: 1440px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+
+} */
+
+nav {
+    display: flex;
+    justify-content: space-between;    
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    display: inline-block;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.creative {
+    position: absolute;
+    top: 195px;
+    left: 344.5px;
+    font-weight: 900;
+    font-size: 56px;
+
+}
