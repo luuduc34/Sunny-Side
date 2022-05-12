@@ -161,11 +161,20 @@ article{
   i{
       color: #2C7566;
   }
-a.navbar {
+  i:hover{
+    text-decoration: none;
+    color: #fff;    
+}
+a.about {
     text-decoration: none;
     color: #2C7566;
 }  
 a.about:hover{
     text-decoration: none;
     color: #fff;    
+}
+
+div.foot{
+    display: flex;
+    justify-content: center;
 }
