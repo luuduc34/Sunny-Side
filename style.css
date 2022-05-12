@@ -1,30 +1,18 @@
-html,
-body,
-div,
-ul,
-head,
-main,
-figure,
-article,
-footer,
-h1,
-h2 {
-    margin: 0;
-    padding: 0;
-}
+*{margin: 0;padding: 0;box-sizing: border-box;}
 
 header {
-    margin: auto;
+    background: url(./sass/img/orange.png) center/cover;
+    height: 800px;
 }
 body{
-    width: 1440px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* main{
+    
     margin: auto;
 }
-main{
-    width: 1440px;
-    margin: auto;
-}
-
+ */
 h1,
 h2,
 h3 {
@@ -40,7 +28,7 @@ h3 {
     left: 40px;
     top: 34px;
     text-align: center;
-    width: 1440px;   
+       
 
 }
 
@@ -94,21 +82,14 @@ li {
     color: #fff;
 }
 
-.col-left{
-    width: 720px;
-    height: 600px;
-}
-
 article{
     display: flex;
 }
 
 .container {  display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3,1fr);
-    grid-auto-columns: 2fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
+    /* grid-template-rows: repeat(3,1fr);
+    grid-auto-flow: row; */
     justify-content: center;
     align-content: center;
     grid-template-areas:
@@ -132,9 +113,9 @@ article{
   .container2 {  display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: 1fr 1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
+    /* grid-auto-columns: 1fr; */
+    /* gap: 0px 0px;
+    grid-auto-flow: row; */
     justify-content: center;
     align-content: center;
     grid-template-areas:
@@ -172,9 +153,4 @@ a.about {
 a.about:hover{
     text-decoration: none;
     color: #fff;    
-}
-
-div.foot{
-    display: flex;
-    justify-content: center;
 }
