@@ -4,6 +4,7 @@ div,
 ul,
 head,
 main,
+figure,
 article,
 footer,
 h1,
@@ -12,7 +13,15 @@ h2 {
     padding: 0;
 }
 
-html {
+header {
+    margin: auto;
+}
+body{
+    width: 1440px;
+    margin: auto;
+}
+main{
+    width: 1440px;
     margin: auto;
 }
 
@@ -31,7 +40,7 @@ h3 {
     left: 40px;
     top: 34px;
     text-align: center;
-    width: 100%;   
+    width: 1440px;   
 
 }
 
@@ -50,22 +59,96 @@ nav {
     justify-content: space-between;    
 }
 
-a {
+a.navbar {
     text-decoration: none;
+    color: #fff;
+}
+a.navbar:hover{
+    border-radius: 18px;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000; 
+    padding: 8px 10px;
+    
+}
+ul{
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
 }
 
 li {
     display: inline-block;
     font-family: 'Barlow', sans-serif;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 600;    
+    margin-top: 20px;
 }
 
 .creative {
     position: absolute;
     top: 195px;
-    left: 344.5px;
+    left: 440px;
     font-weight: 900;
     font-size: 56px;
-
+    color: #fff;
 }
+
+.col-left{
+    width: 720px;
+    height: 600px;
+}
+
+article{
+    display: flex;
+}
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-auto-columns: 2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+      "one two"
+      "three four"
+      "five six";
+  }
+  
+  .one { grid-area: one; }
+  
+  .two { grid-area: two; }
+  
+  .three { grid-area: three; }
+  
+  .four { grid-area: four; }
+  
+  .five { grid-area: five; }
+  
+  .six { grid-area: six; }
+
+  .container2 {  display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+      "seven seven seven seven"
+      "eight nine ten eleven";
+  }
+  
+  .seven { grid-area: seven; }
+  
+  .eight { grid-area: eight; }
+  
+  .nine { grid-area: nine; }
+  
+  .ten { grid-area: ten; }
+  
+  .eleven { grid-area: eleven; }
+  
