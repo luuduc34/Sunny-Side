@@ -154,8 +154,18 @@ article{
   
   footer{
       background-color: #90D4C6;
+      text-align: center;
+      color: #2C7566
   }
 
   i{
       color: #2C7566;
   }
+a.navbar {
+    text-decoration: none;
+    color: #2C7566;
+}  
+a.about:hover{
+    text-decoration: none;
+    color: #fff;    
+}
