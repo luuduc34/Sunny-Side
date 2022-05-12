@@ -152,3 +152,10 @@ article{
   
   .eleven { grid-area: eleven; }
   
+  footer{
+      background-color: #90D4C6;
+  }
+
+  i{
+      color: #2C7566;
+  }
