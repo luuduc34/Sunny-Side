@@ -1,0 +1,20 @@
+/* On inscrit içi le css du footer */
+.footer {
+    background-color: #90D4C6;
+    text-align: center;
+    color: #2C7566;
+    text-align: center;
+    padding: 80px 0;
+
+    a {
+        color: #2C7566;
+    
+        &:hover {
+            color: white;
+        }
+    }
+
+    &__nav {
+        margin: 40px 0 90px;
+    }
+}
