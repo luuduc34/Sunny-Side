@@ -20,7 +20,7 @@ h1.title-article{
     color:#24303E;
 }
 h2.testi{
-    font-family: 'Fraunces 9pt Soft';
+    font-family: 'Fraunces', serif;
     font-style: normal;
     font-weight: 900;
     font-size: 20px;
@@ -31,13 +31,17 @@ h2.testi{
     margin-bottom: 90px;
 }
 h3.name{
-    font-size: 18px;
-    letter-spacing: -0.13px;
-    color:#24303E;
+    font-style: normal;
     font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.128571px;
+    color: #24303E;
+    margin-top: 60px;
 }
 h3.five-six{
-    font-family: 'Fraunces 9pt Soft';
+    font-family: 'Fraunces', serif;
     font-style: normal;
     font-weight: 900;
     font-size: 28px;
@@ -46,10 +50,21 @@ h3.five-six{
     letter-spacing: -0.2px;
     color: #24554A;
 }
+nav.header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 50px;
+}
+figure{
+    margin-left: 50px;
+}
+ul#header{
+    margin-right: 80px;
+}
 p.title-p{
     font-family: 'Barlow', sans-serif;
     font-size: 18px;
-    /* font-weight: 600; */
     line-height: 30px;
     margin: 50px 0;
 }
@@ -69,7 +84,7 @@ p.role{
     letter-spacing: -0.1px;
     color:#A7AAAD;
     font-size: 14px;
-    margin: 15px;
+    margin: 8px;
 }
 p.five-six{
     font-family: 'Barlow';
@@ -100,16 +115,7 @@ div.yellow{
     margin-left: 3px;
     margin-top: -6px;
 }
-div.yellow:hover{
-    width: 125px;
-    height: 9px;
-    background: #FAD400;
-    opacity: 1;
-    mix-blend-mode: normal;
-    border-radius: 28px;
-    margin-left: 3px;
-    margin-top: -6px;
-}
+
 div.red{
     width: 125px;
     height: 9px;
@@ -120,19 +126,7 @@ div.red{
     margin-left: 3px;
     margin-top: -6px;
 }
-div.red:hover{
-    width: 125px;
-    height: 9px;
-    background: #FE7766;
-    opacity: 1;
-    mix-blend-mode: normal;
-    border-radius: 28px;
-    margin-left: 3px;
-    margin-top: -6px;
-}
-div.container-header{
-    height: 60px;
-}
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -180,11 +174,17 @@ li.social{
 }
 .creative {
     position: relative;
-    top: 195px;
+    top: 130px;
     text-align: center;
+    font-family: 'Fraunces', serif;
+    font-style: normal;
     font-weight: 900;
     font-size: 56px;
-    color: #fff;
+    line-height: 69px;
+    text-align: center;
+    letter-spacing: 8.75px;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 article{
     display: flex;
@@ -200,14 +200,15 @@ article{
       "three four"
       "five six";
 }
-  
+section{
+    background-color: #FFFCF8;
+}  
 .one { grid-area: one; 
     display: flex;
     justify-content: center;
     align-content: center;
     justify-items: center;
     align-items: center;
-    background-color: #fff;
 }
   
 .two { grid-area: two; }
@@ -220,7 +221,6 @@ article{
     align-content: center;
     justify-items: center;
     align-items: center;
-    background-color: #fff;
 }  
 .five { grid-area: five; 
     background: url(./sass/img/cherry.png) center/cover;
@@ -256,7 +256,7 @@ div.sub{
       "seven seven seven seven"
       "eight nine ten eleven";
     align-items: center; 
-    background-color: #fff;
+    background-color: #FFFCF8;
 }
   
 .seven { grid-area: seven; 
@@ -306,7 +306,7 @@ a.about:hover{
     text-decoration: none;
     color: #fff;    
 }
-a.learn-more{
+a.learn-more1, .learn-more2{
     text-decoration: none;
     color:#24303E;  
     font-family: 'Fraunces', serif;
@@ -314,3 +314,26 @@ a.learn-more{
     font-weight: 900;
     margin-left: 10px;
 }
+
+a.learn-more1:hover div.yellow{
+    width: 125px;
+    height: 9px;
+    background: #FAD400;
+    opacity: 1;
+    mix-blend-mode: normal;
+    border-radius: 28px;
+    margin-left: 3px;
+    margin-top: -6px;
+}
+
+a.learn-more2:hover div.red{
+    width: 125px;
+    height: 9px;
+    background: #FE7766;
+    opacity: 1;
+    mix-blend-mode: normal;
+    border-radius: 28px;
+    margin-left: 3px;
+    margin-top: -6px;
+}  
+
