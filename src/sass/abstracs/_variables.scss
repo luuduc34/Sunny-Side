@@ -2,12 +2,14 @@
 On les range par section et on met un petit commentaire comme "titre" ainsi, on s'y retrouve easy! */
 
 // Fonts
-$font-body: 'Fraunces', Serif;
+$font-global: 'Fraunces', Serif;
+$font-bar: 'Barlow', sans-serif;
 
-/* Dimensions
+//Color
+$color-global: #F2F2F2;
 
-$width-header: 1440px;
-$height-header: 4174px; */
+// Dimensions
+$max-width: 1440px;
 
 // Positions
 $position-abs: absolute;

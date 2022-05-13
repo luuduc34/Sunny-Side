@@ -1,0 +1,50 @@
+.banner {
+    
+    &__title {
+        position: relative;
+        top: 160px;
+        text-align: center;
+        font-family: 'Fraunces', serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 56px;
+        line-height: 69px;
+        text-align: center;
+        letter-spacing: 8.75px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    
+    &__arrow {
+        width: 8px;
+        height: 140px;
+        position: relative;
+        top: 240px;
+        left: 50%;
+        border-radius: 30px;
+        background-color: #fff;
+    
+        &::before {
+            content: "";
+            position: absolute;
+            top: 75%;
+            left: 13px;
+            width: 8px;
+            height: 45px;
+            transform: rotate(45deg);
+            border-radius: 25px;
+            background-color: white;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 75%;
+            right: 13px;
+            width: 8px;
+            height: 45px;
+            transform: rotate(-45deg);
+            border-radius: 25px;
+            background-color: white;
+        }
+    }
+}

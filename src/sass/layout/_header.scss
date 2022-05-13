@@ -1,0 +1,14 @@
+/* On inscrit içi le css du header */
+header {
+    background: url(../img/orange.png) center/cover;
+    height: 800px;
+}
+
+.header__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    padding: 0 50px;
+}

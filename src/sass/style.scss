@@ -1,0 +1,24 @@
+/* Sert à mettre en lien nos sous-dossiers afin de compiler) */
+@import "./abstracs/variables";
+@import "./abstracs/mixins";
+
+@import "./base/reset"; /* le reset toujours en premier */
+@import "./base/grid";
+@import "./base/typography";
+
+/*le dossier vendor sert à ajouter les css des librairies externes*/
+//exemple : @import "vendor/bxslider";
+
+@import "./components/banner";
+@import "./components/bloc";
+@import "./components/testimonials";
+
+@import "./layout/common"; /* le common toujours en premier */
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/nav";
+
+
+/* Cours hyper utile https://openclassrooms.com/fr/courses/6106181-simplifiez-vous-le-css-avec-sass */
+
+

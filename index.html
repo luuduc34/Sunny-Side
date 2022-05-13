@@ -7,107 +7,114 @@
   <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
   <script src="https://kit.fontawesome.com/de0135f311.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="src/css/style.min.css">
   <title>Sunnyside agency landing page</title>
 </head>
 <body>
-  <header> 
-      <nav class="header">
-        <figure><img src="./sass/img/sunnyside.png" alt=""></figure>        
-        <ul id="header">
-          <li class="nav"><a class="navbar" href="">About</a></li>
-          <li class="nav"><a class="navbar" href="">Services</a></li>
-          <li class="nav"><a class="navbar" href="">Projects</a></li>
-          <li class="nav"><a class="navbar" href="">Contact</a></li>
-        </ul>        
-      </nav>
-      <h1 class="creative">WE ARE CREATIVES</h1>
-      <div class="arrow-to-bottom"></div>
+  <header class="header"> 
+      <div class="header__main">
+        <figure class="header__logo logo"><img src="./src/img/sunnyside.png" alt=""></figure> 
+        <nav class="header__nav nav nav--main">       
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Services</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Projects</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Contact</a></li>
+          </ul>        
+        </nav>
+      </div>
+      <div class="header__banner banner">
+        <h1 class="banner__title">WE ARE CREATIVES</h1>
+        <div class="banner__arrow"></div>
+      </div>
   </header>
 
   <main>
     <section>
       <div class="container">
         <div class="one">
-          <div class="sub"><h1 class="title-article">Transform your brand</h1>
-            <p class="title-p">We are a full-service creative agency spacializing in helping brands grow fast. Engage your clients throught compelling visuals that do most of the marketing for you.</p>
-            <a class="learn-more1" href="">LEARN MORE<div class="yellow"></div></a>
+          <div class="bloc">
+            <h1 class="bloc__title">Transform your brand</h1>
+            <p class="bloc__text">We are a full-service creative agency spacializing in helping brands grow fast. Engage your clients throught compelling visuals that do most of the marketing for you.</p>
+            <a class="bloc__link" href="">LEARN MORE<div class="yellow"></div></a>
           </div>
         </div>
-        <div class="two"><img src="./sass/img/egg.png" alt=""></div>
-        <div class="three"><img src="./sass/img/coupe.png" alt=""></div>
+        <div class="two"><img class="img-cover" src="./src/img/egg.png" alt=""></div>
+        <div class="three"><img class="img-cover" src="./src/img/coupe.png" alt=""></div>
         <div class="four">
-          <div class="sub"><h1 class="title-article">Stand out to the right audience</h1>
-            <p class="title-p">Using a collaborative formula of designers, researchers, photographers, videographers, and copyrighters, we'll build and extend your brand in digital places.</p>
-            <a class="learn-more2" href="">LEARN MORE<div class="red"></div></a>
+          <div class="bloc">
+            <h1 class="bloc__title">Stand out to the right audience</h1>
+            <p class="bloc__text">Using a collaborative formula of designers, researchers, photographers, videographers, and copyrighters, we'll build and extend your brand in digital places.</p>
+            <a class="bloc__link" href="">LEARN MORE<div class="red"></div></a>
           </div>
         </div>
         <div class="five">
-          <div class="sub2">
-            <h3 class="five-six">Graphic design</h3>
-            <p class="five-six">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+          <div class="bloc-2">
+            <h3 class="bloc-2__title">Graphic design</h3>
+            <p class="bloc-2__text">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
           </div>
         </div>
         <div class="six">
-          <div class="sub2">
-            <h3 class="five-six">Photography</h3>
-            <p class="five-six">Increase your credibility by getting the most, stunning, high-quality photos that improve your business image.</p>
+          <div class="bloc-2">
+            <h3 class="bloc-2__title">Photography</h3>
+            <p class="bloc-2__text">Increase your credibility by getting the most, stunning, high-quality photos that improve your business image.</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="testimonials">
+    <section>
       <div class="container2">
           <div class="seven">
-            <div><h2 class="testi">CLIENT TESTIMONIALS</h2>
-              <ul class="container-testimonials">
-                <li class="person">
-                  <img src="./sass/img/Oval.png" alt="">
-                  <p class="message">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-                  <h3 class="name">Emily R.</h3>
-                  <p class="role">Marketing Director</p>
+            <div class="testimonials">
+              <h2 class="testimonials__title">CLIENT TESTIMONIALS</h2>
+              <ul class="testimonials__list">
+                <li class="testimonials__item">
+                  <img src="./src/img/Oval.png" alt="">
+                  <p class="testimonials__message">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+                  <h3 class="testimonials__name">Emily R.</h3>
+                  <p class="testimonials__role">Marketing Director</p>
                 </li>
-                <li class="person">
-                  <img src="./sass/img/Oval Copy.png" alt="">
-                  <p class="message">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-                  <h3 class="name">Thomas S.</h3>
-                  <p class="role">Chief Operating Officer</p>
+                <li class="testimonials__item">
+                  <img src="./src/img/Oval Copy.png" alt="">
+                  <p class="testimonials__message">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+                  <h3 class="testimonials__name">Thomas S.</h3>
+                  <p class="testimonials__role">Chief Operating Officer</p>
                 </li>
-                <li class="person">
-                  <img src="./sass/img/Oval Copy 2.png" alt="">
-                  <p class="message">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-                  <h3 class="name">Jennie F.</h3>
-                  <p class="role">Business Owner</p>
+                <li class="testimonials__item">
+                  <img src="./src/img/Oval Copy 2.png" alt="">
+                  <p class="testimonials__message">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+                  <h3 class="testimonials__name">Jennie F.</h3>
+                  <p class="testimonials__role">Business Owner</p>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="eight"><img src="./sass/img/milk.png" alt="" class="image-gallery"></div>
-          <div class="nine"><img src="./sass/img/plate.png" alt="" class="image-gallery"></div>
-          <div class="ten"><img src="./sass/img/cornet.png" alt="" class="image-gallery"></div>
-          <div class="eleven"><img src="./sass/img/sugar.png" alt="" class="image-gallery"></div>
+          <div class="eight"><img class="img-cover" src="./src/img/milk.png" alt="" class="image-gallery"></div>
+          <div class="nine"><img class="img-cover" src="./src/img/plate.png" alt="" class="image-gallery"></div>
+          <div class="ten"><img class="img-cover" src="./src/img/cornet.png" alt="" class="image-gallery"></div>
+          <div class="eleven"><img class="img-cover" src="./src/img/sugar.png" alt="" class="image-gallery"></div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="foot">
-      <figure><img src="./sass/img/sunnyside_bottom.png" alt=""></figure>
-      <nav class="footer">
-        <ul>
-          <li class="foot"><a class="about" href="">About</a></li>
-          <li class="foot"><a class="about" href="">Services</a></li>
-          <li class="foot"><a class="about" href="">Projects</a></li>
-        </ul>
-      </nav>
-      <ul class="footer">
-        <li class="social"><a href=""><i class="fa-brands fa-facebook-square fa-xl"></i></a></li>
-        <li class="social"><a href=""><i class="fa-brands fa-instagram fa-xl"></i></a></li>
-        <li class="social"><a href=""><i class="fa-brands fa-twitter fa-xl"></i></a></li>
-        <li class="social"><a href=""><i class="fa-brands fa-pinterest fa-xl"></i></a></li>
+  <footer class="footer">
+    <figure class="footer__logo logo"><img src="./src/img/sunnyside_bottom.png" alt=""></figure>
+    <nav class="footer__nav nav nav--dark">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="">About</a></li>
+        <li class="nav__item"><a class="nav__link" href="">Services</a></li>
+        <li class="nav__item"><a class="nav__link" href="">Projects</a></li>
       </ul>
-    </div>
+    </nav>
+    <nav class="footer__social nav nav--dark nav--social">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href=""><i class="fa-brands fa-facebook-square fa-xl"></i></a></li>
+        <li class="nav__item"><a class="nav__link" href=""><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+        <li class="nav__item"><a class="nav__link" href=""><i class="fa-brands fa-twitter fa-xl"></i></a></li>
+        <li class="nav__item"><a class="nav__link" href=""><i class="fa-brands fa-pinterest fa-xl"></i></a></li>
+      </ul>
+    </nav>
   </footer>
 
 </body>

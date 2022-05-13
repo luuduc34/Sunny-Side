@@ -1,0 +1,42 @@
+
+.nav {
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        font-family: 'Barlow', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__link {
+        text-decoration: none;
+        padding: 12px 24px;
+        border-radius: 30px;
+    }
+
+    //Menu principal
+    &--main {
+        .nav__item {
+            margin-left: 20px;
+        }
+        .nav__link {
+            color: #fff;
+    
+            &:hover {
+                color: #000;
+                background-color: #fff;
+            }
+        }
+    }
+
+    //Menu réseaux sociaux
+    &--social {
+        .nav__link {
+            font-size: 14px;
+            padding: 12px;
+        }
+    }
+}
