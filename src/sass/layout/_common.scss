@@ -70,7 +70,7 @@ img {
 
 .five {
     grid-area: five;
-    background: url(../img/cherry.png) center/cover;
+    background: url(../img/cherry.png) center top /cover;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -80,7 +80,7 @@ img {
 
 .six {
     grid-area: six;
-    background: url(../img/mandarine.png) center/cover;
+    background: url(../img/mandarine.png) center top/cover;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -110,7 +110,6 @@ img {
     align-items: center;
     text-align: center;
     font-family: 'Fraunces', serif;
-    padding: 160px 0;
 }
 
 .eight {

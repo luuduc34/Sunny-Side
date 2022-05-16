@@ -54,10 +54,9 @@
 
 @media screen and (max-width: 768px) {
     .banner {
-
         &__title {
             position: relative;
-            top: 160px;
+            top: 130px;
             text-align: center;
             font-family: 'Fraunces', serif;
             font-style: normal;
@@ -65,9 +64,14 @@
             font-size: 26px;
             line-height: 39px;
             text-align: center;
-            /* letter-spacing: 8.75px; */
             text-transform: uppercase;
             color: #FFFFFF;
+        }
+
+        &__arrow {
+            transform: scale(0.5);
+            top: 130px;
+            bottom: 0px;
         }
     }
 }
