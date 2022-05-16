@@ -1,5 +1,5 @@
 .banner {
-    
+
     &__title {
         position: relative;
         top: 160px;
@@ -14,7 +14,7 @@
         text-transform: uppercase;
         color: #FFFFFF;
     }
-    
+
     &__arrow {
         width: 8px;
         height: 140px;
@@ -23,7 +23,7 @@
         left: 50%;
         border-radius: 30px;
         background-color: #fff;
-    
+
         &::before {
             content: "";
             position: absolute;
@@ -35,6 +35,7 @@
             border-radius: 25px;
             background-color: white;
         }
+
         &::after {
             content: "";
             position: absolute;
@@ -45,6 +46,32 @@
             transform: rotate(-45deg);
             border-radius: 25px;
             background-color: white;
+        }
+    }
+}
+
+/******media queries******/
+
+@media screen and (max-width: 768px) {
+    .banner {
+        &__title {
+            position: relative;
+            top: 130px;
+            text-align: center;
+            font-family: 'Fraunces', serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 39px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+
+        &__arrow {
+            transform: scale(0.5);
+            top: 130px;
+            bottom: 0px;
         }
     }
 }

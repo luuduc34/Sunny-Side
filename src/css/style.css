@@ -102,45 +102,6 @@ h3 {
   font-family: "Fraunces", Serif;
 }
 
-h1.title-article {
-  font-size: 40px;
-  font-weight: 900;
-  color: #24303E;
-}
-
-h2.testi {
-  font-family: "Fraunces", Serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 25px;
-  text-align: center;
-  letter-spacing: 5px;
-  color: #A7AAAD;
-  margin-bottom: 90px;
-}
-
-h3.name {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  color: #24303E;
-  margin-top: 80px;
-}
-
-h3.five-six {
-  font-family: "Fraunces", Serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 28px;
-  line-height: 35px;
-  text-align: center;
-  letter-spacing: -0.2px;
-  color: #24554A;
-}
-
 /*le dossier vendor sert à ajouter les css des librairies externes*/
 .banner__title {
   position: relative;
@@ -193,9 +154,31 @@ h3.five-six {
   background-color: white;
 }
 
+/******media queries******/
+@media screen and (max-width: 768px) {
+  .banner__title {
+    position: relative;
+    top: 130px;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 39px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .banner__arrow {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    top: 130px;
+    bottom: 0px;
+  }
+}
+
 .bloc {
   max-width: 500px;
-  min-height: 285px;
 }
 
 .bloc__title {
@@ -291,6 +274,37 @@ h3.five-six {
   margin: 20px 0;
 }
 
+@media screen and (max-width: 768px) {
+  .bloc {
+    max-width: 100%;
+    padding: 30px;
+  }
+  .bloc__link {
+    width: 100%;
+  }
+  .bloc__title {
+    font-size: 27px;
+  }
+  .bloc__text {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .bloc-2 {
+    max-width: 100vw;
+  }
+  .bloc-2__title {
+    color: white;
+  }
+  .bloc-2__text {
+    color: white;
+  }
+}
+
+.testimonials {
+  padding: 160px 0;
+}
+
 .testimonials__list {
   max-width: 1100px;
   display: -webkit-box;
@@ -343,6 +357,35 @@ h3.five-six {
   margin: 8px;
 }
 
+@media screen and (max-width: 768px) {
+  .testimonials {
+    display: block;
+    padding: 50px 0;
+  }
+  .testimonials__item {
+    margin-bottom: 30px;
+    max-width: 460px;
+  }
+  .testimonials__title {
+    margin-bottom: 30px;
+  }
+  .testimonials__message {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 20px;
+  }
+  .testimonials__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .testimonials__name {
+    margin-top: 20px;
+  }
+}
+
 /* Gère le css principale de la page */
 * {
   margin: 0;
@@ -381,8 +424,8 @@ img {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: (600px)[3];
-      grid-template-rows: repeat(3, 600px);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
   grid-auto-flow: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -444,7 +487,7 @@ img {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: five;
-  background: url(../img/cherry.png) center/cover;
+  background: url(../img/cherry.png) center top/cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,7 +506,7 @@ img {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: six;
-  background: url(../img/mandarine.png) center/cover;
+  background: url(../img/mandarine.png) center top/cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -476,11 +519,6 @@ img {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-}
-
-div.sub2 {
-  max-width: 339px;
-  margin: 45px 50px 45px;
 }
 
 .container2 {
@@ -521,7 +559,6 @@ div.sub2 {
           align-items: center;
   text-align: center;
   font-family: 'Fraunces', serif;
-  padding: 160px 0;
 }
 
 .eight {
@@ -548,11 +585,60 @@ div.sub2 {
   grid-area: eleven;
 }
 
+/*********** meadia queries ***********/
+@media screen and (max-width: 768px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    grid-auto-flow: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+        grid-template-areas: "one" "two" "four" "three" "five" "six";
+  }
+  .container2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+        grid-template-areas: "seven seven seven seven" "eight nine" "ten eleven";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #FFFCF8;
+  }
+}
+
 /* le common toujours en premier */
 /* On inscrit içi le css du header */
 header {
   background: url(../img/orange.png) center/cover;
   height: 800px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  header {
+    height: 500px;
+  }
 }
 
 .header__main {
@@ -568,6 +654,19 @@ header {
   position: relative;
   top: 50px;
   padding: 0 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .header__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 20px;
+  }
 }
 
 /* On inscrit içi le css du footer */
@@ -628,6 +727,25 @@ header {
 .nav--social .nav__link {
   font-size: 14px;
   padding: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav--main {
+    margin-top: 30px;
+  }
+  .nav--main .nav__item {
+    margin-left: 10px;
+  }
+  .nav--main .nav__link {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .nav--main .nav__item {
+    margin-left: 0;
+  }
 }
 
 /* Cours hyper utile https://openclassrooms.com/fr/courses/6106181-simplifiez-vous-le-css-avec-sass */
