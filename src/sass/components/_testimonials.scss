@@ -16,7 +16,7 @@
         color: #A7AAAD;
         margin-bottom: 90px;
     }
-    
+
     &__message {
         font-family: 'Barlow';
         font-style: normal;
@@ -28,7 +28,7 @@
         color: #5B636D;
         margin: 40px 20px;
     }
-    
+
     &__name {
         font-style: normal;
         font-weight: 900;
@@ -38,12 +38,18 @@
         color: #24303E;
         margin-top: 80px;
     }
-    
+
     &__role {
         font-family: $font-bar;
         letter-spacing: -0.1px;
         color: #A7AAAD;
         font-size: 14px;
         margin: 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .testimonials {
+        display: inline;
     }
 }

@@ -7,7 +7,7 @@
         font-weight: 900;
         color: #24303E;
     }
-    
+
     &__text {
         font-family: $font-bar;
         font-size: 18px;
@@ -22,7 +22,7 @@
         font-size: 15px;
         font-weight: 900;
         margin-left: 10px;
-    
+
         &:hover {
             .yellow {
                 width: 125px;
@@ -34,6 +34,7 @@
                 margin-left: 3px;
                 margin-top: -6px;
             }
+
             .red {
                 width: 125px;
                 height: 9px;
@@ -73,7 +74,7 @@
 .bloc-2 {
     max-width: 339px;
     margin: 45px 50px 45px;
-    
+
     &__title {
         font-family: $font-global;
         font-style: normal;
@@ -94,5 +95,13 @@
         text-align: center;
         color: #3E7467;
         margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bloc {
+        &__link {
+            width: 100%;
+        }
     }
 }
