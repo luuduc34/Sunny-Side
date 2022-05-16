@@ -149,6 +149,23 @@ h3 {
   background-color: white;
 }
 
+/******media queries******/
+@media screen and (max-width: 410px) {
+  .banner__title {
+    position: relative;
+    top: 160px;
+    text-align: center;
+    font-family: "Fraunces", serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 39px;
+    text-align: center;
+    /* letter-spacing: 8.75px; */
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}
 .bloc {
   max-width: 500px;
   max-height: 285px;
